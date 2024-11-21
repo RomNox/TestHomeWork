@@ -18,13 +18,13 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }
 
     public boolean isElementPresent(By locator) {
-        return driver.findElements(locator).size()>0;
+        return driver.findElements(locator).size() > 0;
     }
 
     public void type(By locator, String text) {
@@ -36,5 +36,4 @@ public class TestBase {
     public void click(By locator) {
         driver.findElement(locator).click();
     }
-
 }
