@@ -1,10 +1,14 @@
+package com.shop.models;
+
 public class RegistrationData {
+
     private String gender;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
 
+    // Конструктор
     public RegistrationData(String gender, String firstName, String lastName, String email, String password) {
         this.gender = gender;
         this.firstName = firstName;
@@ -13,17 +17,7 @@ public class RegistrationData {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "RegistrationData{" +
-                "gender='" + gender + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
-
+    // Геттеры и сеттеры
     public String getGender() {
         return gender;
     }
@@ -62,5 +56,16 @@ public class RegistrationData {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "RegistrationData{" +
+                "gender='" + gender + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
