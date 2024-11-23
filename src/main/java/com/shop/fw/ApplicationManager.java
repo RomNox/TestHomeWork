@@ -13,7 +13,6 @@ public class ApplicationManager {
     WebDriver driver;
 
     UserHelper user;
-    ContactHelper contact;
     HomePageHelper homePage;
     CartHelper cart;
 
@@ -35,7 +34,6 @@ public class ApplicationManager {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         user = new UserHelper(driver);
-        contact = new ContactHelper(driver);
         homePage = new HomePageHelper(driver);
         cart = new CartHelper(driver);
     }
@@ -46,10 +44,6 @@ public class ApplicationManager {
 
     public UserHelper getUser() {
         return user;
-    }
-
-    public ContactHelper getContact() {
-        return contact;
     }
 
     public HomePageHelper getHomePage() {
