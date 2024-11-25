@@ -1,7 +1,0 @@
-22:59:29.158 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
-  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
-
-22:59:29.181 [main] INFO  com.TestBase -- Starting the application setup...
-22:59:33.064 [main] INFO  com.TestBase -- Application setup completed.
-22:59:45.571 [main] INFO  com.TestBase -- Stopping the application...
-22:59:45.757 [main] INFO  com.TestBase -- Application stopped.
