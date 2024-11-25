@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.LoginTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-25T22:03:07" hostname="iMac-Vladimir.local" time="2.01">
+  <properties/>
+  <testcase name="loginPositiveTest" classname="com.LoginTests" time="0.933"/>
+  <testcase name="loginNegativeWithoutEmailTest" classname="com.LoginTests" time="0.644"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
