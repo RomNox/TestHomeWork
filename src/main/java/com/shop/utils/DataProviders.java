@@ -18,7 +18,7 @@ public class DataProviders {
         List<Object[]> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/registration_data.csv")));
 
-        String line = reader.readLine(); // Пропускаем заголовок, если есть
+        String line = reader.readLine();
         while (line != null) {
             String[] split = line.split(",");
             list.add(new Object[]{new RegistrationData(split[0], split[1], split[2], split[3], split[4])});

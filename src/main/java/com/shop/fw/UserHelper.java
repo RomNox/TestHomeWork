@@ -71,6 +71,7 @@ public class UserHelper extends BaseHelper {
         click(By.cssSelector("a[href='/logout']"));
     }
 
+    // Методы для нового класса 19 урок
     public void clickOnRegisterLink() {
         click(By.cssSelector("a[href='/register']"));
     }
