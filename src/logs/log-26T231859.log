@@ -1,0 +1,7 @@
+23:19:00.161 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  /Users/vladimirromajkin/QA/HomeWork15lesson/src/test/resources/testng.xml
+
+23:19:00.183 [main] INFO  com.TestBase -- Starting the application setup...
+23:19:03.567 [main] INFO  com.TestBase -- Application setup completed.
+23:21:05.402 [main] INFO  com.TestBase -- Stopping the application...
+23:21:05.683 [main] INFO  com.TestBase -- Application stopped.

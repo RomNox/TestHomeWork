@@ -5,4 +5,10 @@
             <class name="com.LoginTests"/>
         </classes>
     </test>
+    <test name="DemoWebShop_Test_Data_Driven">
+        <classes>
+            <class name="com.LoginTests"/>
+            <class name="com.RegistrationDataDrivenTests"/>
+        </classes>
+    </test>
 </suite>

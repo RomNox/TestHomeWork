@@ -11,15 +11,14 @@ public class UserHelper extends BaseHelper {
         super(driver);
     }
 
+    // Метод для нажатия на ссылку "Register"
+    public void clickOnRegistrationLink() {
+        click(By.cssSelector("a[href='/register']")); // Добавляем метод для перехода на страницу регистрации
+    }
+
     // Метод для нажатия на кнопку регистрации
     public void clickOnRegistrationButton() {
         click(By.name("register-button"));
-    }
-
-    // Метод для заполнения формы входа
-    public void fillLoginForm(User user) {
-        type(By.id("Email"), user.getEmail());
-        type(By.id("Password"), user.getPassword());
     }
 
     // Метод для заполнения регистрационной формы
@@ -36,9 +35,15 @@ public class UserHelper extends BaseHelper {
         type(By.id("ConfirmPassword"), data.getPassword());
     }
 
+    // Метод для заполнения формы входа
+    public void fillLoginForm(User user) {
+        type(By.id("Email"), user.getEmail());
+        type(By.id("Password"), user.getPassword());
+    }
+
     // Метод для нажатия на ссылку "Log in"
     public void clickOnLoginLink() {
-        click(By.cssSelector("[href='/login']"));
+        click(By.cssSelector("a[href='/login']"));
     }
 
     // Метод для проверки наличия кнопки "Sign Out"
@@ -64,5 +69,13 @@ public class UserHelper extends BaseHelper {
     // Метод для нажатия на кнопку "Sign Out"
     public void clickOnSignOutButton() {
         click(By.cssSelector("a[href='/logout']"));
+    }
+
+    public void clickOnRegisterLink() {
+        click(By.cssSelector("a[href='/register']"));
+    }
+
+    public void submitRegistrationForm() {
+        click(By.id("register-button"));
     }
 }

@@ -18,15 +18,16 @@ public class RegistrationTests extends TestBase {
         );
 
         // Переходим на страницу регистрации
-        app.getUser().clickOnRegistrationButton();
+        app.getUser().clickOnRegisterLink(); // Переходим на страницу регистрации через ссылку
 
         // Заполняем форму регистрации
         app.getUser().fillRegistrationForm(registrationData);
 
         // Нажимаем кнопку регистрации
-        app.getUser().clickOnRegistrationButton();
+        app.getUser().submitRegistrationForm(); // Используем правильный метод для отправки формы
 
         // Проверяем успешность регистрации
         Assert.assertTrue(app.getUser().isSignOutButtonPresent(), "Registration failed: Sign out button is not present");
     }
 }
+
