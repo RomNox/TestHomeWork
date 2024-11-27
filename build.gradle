@@ -15,11 +15,11 @@ dependencies {
     implementation 'ch.qos.logback:logback-classic:1.5.12'
 }
 
-test {
+tasks.test {
     useTestNG()
     reports {
-        junitXml.enabled = true
-        html.enabled = true
+        junitXml.required.set(true) // Включение JUnit XML отчетов
+        html.required.set(true)    // Включение HTML отчетов
     }
 }
 
@@ -28,7 +28,7 @@ task testSuite(type: Test) {
         suites 'testng.xml'
     }
     reports {
-        junitXml.enabled = true
-        html.enabled = true
+        junitXml.required.set(true) // Включение JUnit XML отчетов
+        html.required.set(true)    // Включение HTML отчетов
     }
 }
