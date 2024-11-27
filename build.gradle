@@ -17,10 +17,18 @@ dependencies {
 
 test {
     useTestNG()
+    reports {
+        junitXml.enabled = true
+        html.enabled = true
+    }
 }
 
 task testSuite(type: Test) {
     useTestNG() {
         suites 'testng.xml'
+    }
+    reports {
+        junitXml.enabled = true
+        html.enabled = true
     }
 }
